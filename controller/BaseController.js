@@ -1,3 +1,3 @@
-function hello(){
-    console.log("Puto amo");
+function test(){
+    console.log("test");
 }
