@@ -3,58 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nuevo Producto</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>newProduct</title>
+    <link rel="stylesheet" href="style2.css" />
   </head>
   <header id="header">
     <img src="images/logo_IU Digital Store.png" />
-    <h1>Ingreso de Productos</h1>
     <a href="index.html">Volver</a>
   </header>
-  <br />
   <body>
-    <h2>Nuevo Producto:</h2>
-    <!--method="post"-->
-    <form >
-      <label>Fecha de Creación:</label>
-      <input type="date" name="txtFechaP" required="true" /><br /><br />
-
-      <label>Clase de Producto</label>
-      <select>
-        <option value="Smartphones">Smartphones</option>
-        <option value="Portátiles">Portátiles</option>
-        <option value="Tabletas">Tabletas</option>
-        <option value="Consolas">Consolas de videojuegos</option>
-        <option value="Altavoces">Altavoces inteligentes</option>
-        <option value="Auriculares">Auriculares inalámbricos</option>
-        <option value="Drones">Drones</option>
-        </select
-      ><br /><br />
-      <label>Nombre Producto: </label>
-      <input
-        type="text"
-        name="txtNombreP"
-        required="true"
-        placeholder="ingrese el nombre"
-      /><br /><br />
-
-      <label>Precio de Producto: </label>
-      <input
-        type="number"
-        name="txtPrecioP"
-        required="true"
-        placeholder="ingrese el precio"
-      /><br /><br />
-
-      <label>Precio de Producto: </label>
-      <input
-        type="number"
-        name="txtInventarioP"
-        required="true"
-        placeholder="ingrese el inventario"
-      /><br /><br />
-
-      <input type="submit" name="btnEnviar"/>
-      <input type="reset" name="btnEnviar" value="Borrar" />
-    </form>
-  </body>
-</html>
+    <div class="main-container">
+      <section>
+        <h2>Ingreso de Productos</h2>
+      </section>
+      <form>
+        <section class="form-formulario">
+          <br/>
+          <br/>
+          <label>Clase de Producto</label>
+          <br/>
+          <select>
+            <option value="Smartphones">Smartphones</option>
+            <option value="Portátiles">Portátiles</option>
+            <option value="Tabletas">Tabletas</option>
+            <option value="Consolas">Consolas de videojuegos</option>
+            <option value="Altavoces">Altavoces inteligentes</option>
+            <option value="Auriculares">Auriculares inalámbricos</option>
+            <option value="Drones">Drones</option></select
+          ><br /><br />
+          <label>Fecha de Creación:</label>
+          <input type="date" name="txtFechaP" required="true" /><br /><br />
+  
+  
+          <label>Nombre Producto: </label>
+          <input
+            type="text"
+            name="txtNombreP"
+            required="true"
+            placeholder="ingrese el nombre"
+          /><br /><br />
+  
+          <label>Precio de Producto: </label>
+          <input
+            type="number"
+            name="txtPrecioP"
+            required="true"
+            placeholder="ingrese el precio"
+          /><br /><br />
+  
+          <label>Precio de Producto: </label>
+          <input
+            type="number"
+            name="txtInventarioP"
+            required="true"
+            placeholder="ingrese el inventario"
+          /><br /><br />
+  
+          <input type="submit" name="btnEnviar" />
+          <input type="reset" name="btnEnviar" value="Borrar" />
+        </section>
+      </form>
+      <script src="./main.js"></script>
+    </div>
