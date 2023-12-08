@@ -11,8 +11,10 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>newProduct</title>
+    <title>Nuevo Producto</title>
     <link rel="stylesheet" href="style2.css" />
+    <script src="controller/BaseController.js"></script>
+    <script onload="onInit()" ></script>
   </head>
   <header id="header">
     <img src="images/logo_IU Digital Store.png" />
@@ -39,36 +41,40 @@
             <option value="Drones">Drones</option></select
           ><br /><br />
           <label>* Fecha de Creación:</label>
-          <input type="date" name="txtFechaP" required="true" /><br /><br />
+          <p id="alertFecha">¡ Campo obligatorio favor completar !</p>
+          <input type="date" name="txtFechaP" id="txtFechaP"/><br /><br />
   
   
           <label>* Nombre Producto: </label>
+          <p id="alertNombre">¡ Campo obligatorio favor completar !</p>
           <input
             type="text"
             name="txtNombreP"
-            required="true"
+            id="inpNombreP"
             placeholder="ingrese el nombre"
-          /><br /><br />
+          />
+          <br /><br />
   
           <label>* Precio de Producto: </label>
+          <p id="alertPrecio">¡ Campo obligatorio favor completar !</p>
           <input
             type="number"
             name="txtPrecioP"
-            required="true"
+            id="inpPrecioP"
             placeholder="ingrese el precio"
           /><br /><br />
   
           <label>* Inventario de Producto: </label>
+          <p id="alertInv">¡ Campo obligatorio favor completar !</p>
           <input
             type="number"
             name="txtInventarioP"
-            required="true"
+            id="inpInventarioP"
             placeholder="ingrese el inventario"
           /><br /><br />
   
-          <input type="submit" name="btnEnviar" />
-          <input type="reset" name="btnEnviar" value="Borrar" />
         </section>
       </form>
-      <script src="./main.js"></script>
+      <input type="submit" name="btnEnviar" onclick="validSave()" />
+      <input type="reset" name="btnEnviar" value="Borrar" />
     </div>

@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
 * {
   padding: 0;
   margin: 0;
@@ -123,4 +121,66 @@ input[type="submit"]hover {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+nav section {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+#divButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center
+}
+
+#buttonListar {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #070606;
+  background-color:  rgb(168, 168, 13);
+  transition: background-color 0.3s ease;
+}
+
+#buttonBorrar {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #070606;
+  background-color: #db7734;
+  transition: background-color 0.3s ease;
+}
+
+#bloque {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+
+#bloque img {
+  max-width: 100%; 
+  height: 100px; 
+}
+
+div img {
+  max-width: 700px;
 }
